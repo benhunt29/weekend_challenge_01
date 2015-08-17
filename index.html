@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset = "utf-8">
+		
+		<title>Employee Forms</title>
+		
+		<meta name = "Description" content = "Webpage">
+		
+		<link rel="stylesheet" href="styles.css">
+	    
+	    <script src = "jquery-2.1.4.min.js" type="text/javascript"></script>
+	    <script src= "scripts.js" type = "text/javascript"></script>
+
+	</head>
+
+	<body>
+		<header>
+			<h1>Employee List Generator</h1>
+			<p id = "totalSalaries"></p>
+			<button id = "randomEmployeeButton">Generate Random Employee</button>
+		</header>
+		<div id = "topLevel">
+
+			<form id = "newEmployee">
+				<fieldset>
+					<legend>New Employee</legend>
+					<div id = "names">
+						<label for = "firstName" id = "firstNameLabel">First Name: </label>
+						<input type = "text" name = "firstName" id = "firstName" ></input>
+						<label for = "lastName" id = "lastNameLabel">Last Name: </label>
+						<input type = "text" name = "lastName" id = "lastName" ></input>
+					</div>
+					<div id = "jobInfo">
+						<label for = "empTitle" id = "empTitleLabel">Title: </label>
+						<input type = "text" name = "empTitle" id = "empTitle" ></input>
+						<label for = "empNum" id = "empNumLabel">Employee Number: </label>
+						<input type = "number" name = "empNum" id = "empNum" min = "0"  = "true"></input>
+					</div>
+					<div id = "performanceInfo">
+						<label for = "empSalary" id = "empSalaryLabel">Salary: </label>
+						<input type = "text" name = "empSalary" id = "empSalary" ></input>
+						<label for = "lastReviewScore" id = "lastReviewScoreLabel">Last Review Score: </label>
+						<input type = "number" name = "lastReviewScore" id = "lastReviewScore" min = "1" max = "5" ></input>
+					</div>
+					<input type = "submit" value = "Add Employee" id = "addEmployeeButton"></input>
+				</fieldset>
+			</form>
+		
+
+		
+		</div>
+
+	</body>
+
+</html>
